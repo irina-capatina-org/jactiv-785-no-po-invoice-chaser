@@ -1,0 +1,79 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "no-po-invoice-chaser-api",
+    "kind": "process",
+    "type": "api",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "d0389e08-48bc-42e7-b536-58bde2ce887b",
+    "isOverridable": true,
+    "dependencies": [
+      {
+        "kind": "package",
+        "name": "no-po-invoice-chaser-api"
+      }
+    ],
+    "runtimeDependencies": [
+      {
+        "bindingType": "Connection",
+        "bindingKey": "5fadfc73-a372-46ae-a27c-2481741eed07",
+        "bindingValues": {
+          "connectionId": {
+            "defaultValue": "5fadfc73-a372-46ae-a27c-2481741eed07",
+            "isExpression": false
+          }
+        },
+        "bindingMetadata": {
+          "activityName": "HTTP Request: Coupa",
+          "bindingsVersion": "2.2",
+          "solutionsSupport": "true",
+          "connector": "uipath-coupa-coupa",
+          "useConnectionService": "true"
+        },
+        "resourceKind": "Connection",
+        "resourceType": "uipath-coupa-coupa"
+      },
+      {
+        "bindingType": "Connection",
+        "bindingKey": "43d506f7-7de2-4798-aac1-9522e2e45dbb",
+        "bindingValues": {
+          "connectionId": {
+            "defaultValue": "43d506f7-7de2-4798-aac1-9522e2e45dbb",
+            "isExpression": false
+          }
+        },
+        "bindingMetadata": {
+          "activityName": "HTTP Request: Slack",
+          "bindingsVersion": "2.2",
+          "solutionsSupport": "true",
+          "connector": "uipath-salesforce-slack",
+          "useConnectionService": "true"
+        },
+        "resourceKind": "Connection",
+        "resourceType": "uipath-salesforce-slack"
+      }
+    ],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "type": "Api",
+      "name": "no-po-invoice-chaser-api",
+      "package": {
+        "key": "0507af76-3b85-46d3-be2b-0e81e43dd724"
+      },
+      "packageName": "no-po-invoice-chaser-785.api.no-po-invoice-chaser-api",
+      "inputArguments": "{}",
+      "targetFrameworkValue": "Portable",
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180
+    },
+    "locks": [],
+    "key": "51789bb8-9c1a-42f3-9978-160b2fe7b2d5",
+    "files": []
+  }
+}
